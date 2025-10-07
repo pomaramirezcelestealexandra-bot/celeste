@@ -1,0 +1,257 @@
+* {
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {background:#ffffff;}
+
+/* Aplicar ancla */
+html{
+	scroll-behavior: smooth;
+}
+
+/* espacio entre el margen superior y las secciones */
+section[id] {
+	scroll-margin-top: 60px;
+  }
+
+/*barra de navegación*/
+
+.menu_bar {
+	display:none;
+}
+
+header {
+	width: 100%;
+	position: fixed;
+	z-index: 1000;	
+}
+
+header nav {
+	background:#2f3030;
+	z-index:1000;
+	width:100%;
+	margin:0px;
+}
+
+header nav ul {
+	list-style:none;
+}
+
+header nav ul li {
+	display:inline-block;
+	position: relative;
+}
+
+header nav ul li:hover {
+	background:#2c3c5a;
+}
+
+header nav ul li a {
+	color:#fff;
+	display:block;
+	text-decoration:none;
+	padding: 20px;
+}
+
+header nav ul li a span {
+	margin-right:10px;
+}
+
+header nav ul li:hover .children {
+	display:block;
+}
+
+header nav ul li .children {
+	display: none;
+	background:#011826;
+	position: absolute;
+	width: 150%;
+	z-index:1000;
+}
+
+header nav ul li .children li {
+	display:block;
+	overflow: hidden;
+	border-bottom: 1px solid rgba(255,255,255,.5);
+}
+
+header nav ul li .children li a {
+	display: block;
+}
+
+header nav ul li .children li a span {
+	float: right;
+	position: relative;
+	top:3px;
+	margin-right:0;
+	margin-left:10px;
+}
+
+header nav ul li .caret {
+	position: relative;
+	top:3px;
+	margin-left:10px;
+	margin-right:0px;
+}
+
+@media screen and (max-width: 800px) {
+	body {
+		padding-top:80px;
+	}
+
+	.menu_bar {
+		display:block;
+		width:100%;
+		position: fixed;
+		top:0;
+		background:#000;
+	}
+
+	.menu_bar .bt-menu {
+		display: block;
+		padding: 20px;
+		color: #fff;
+		overflow: hidden;
+		font-size: 25px;
+		font-weight: bold;
+		text-decoration: none;
+	}
+
+	.menu_bar span {
+		float: right;
+		font-size: 40px;
+	}
+
+	header nav {
+		width: 100%;
+		height: calc(100% - 80px);
+		position: fixed;
+		right:100%;
+		margin: 0;
+	}
+
+	header nav ul li {
+		display: block;
+		border-bottom:1px solid rgba(255,255,255,.5);
+	}
+
+	header nav ul li a {
+		display: block;
+	}
+
+	header nav ul li:hover .children {
+		display: none;
+	}
+
+	header nav ul li .children {
+		width: 100%;
+		position: relative;
+	}
+
+	header nav ul li .children li a {
+		margin-left:20px;
+	}
+
+	header nav ul li .caret {
+		float: right;
+	}
+
+		/* espacio entre el margen superior y las secciones */
+	section[id] {
+		scroll-margin-top: 80px;
+ 	 }
+
+}
+
+/* nosotros */
+
+.Nosotros{
+	width: 100%;
+	height: 700px;
+	background-color: #c5c7ca;
+}
+
+/* grilla a las imagenes */
+.grilla01{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 16px;
+	max-width: 900px;
+	margin:0 auto;
+}
+
+img{
+	border-radius: 8px;
+	width: 100%;
+	height: auto;
+}
+
+.container{
+	background-color: #3e53ee;
+	border: 3px solid #91b6ec;
+	border-radius: 10px;
+	display: grid;
+	grid-template-columns: minmax(100px, 1fr) 1fr 1fr;
+	grid-auto-rows: 50px;
+	gap: 10px;
+	margin: 5px;
+}
+
+.container div{
+	background-color: #120da5;
+	border: 2px solid #fdfefe;
+	border-radius: 6px;
+	
+}
+
+.container div:first-child{
+	grid-row-start:1 ;
+	grid-row-end:3 ;
+} 
+
+/* nuestras carreras */
+
+.NuestrasCarreras{
+	width: 100%;
+	height: 700px;
+	background-color: #91b6ec;
+}
+
+.Testimonios{
+	width: 100%;
+	height: 700px;
+	background-color: #3e53ee;
+}
+
+.Contactenos{
+	width: 100%;
+	height: 700px;
+	background-color: #5954e6;
+}
+
+
+/* 1 paso estilo para el boton subir */
+.btn-scrolltop {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	padding: 15px 20px;
+	background: rgb(2, 0, 8);
+	color: white;
+	border: 1px solid white;
+	border-radius: 100%;
+	cursor: pointer;
+	transform: translateY(100px);
+	transition: 0.3s;
+  }
+  
+  .btn-scrolltop-on {
+	transform: translateY(0);
+  }
+/* ---------------------------- */
