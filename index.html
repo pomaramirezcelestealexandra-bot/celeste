@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Menu</title>
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <link rel="stylesheet" href="css/estilo06.css" />
+    <link rel="stylesheet" href="css/estilo02.css" />
+
+    <link rel="stylesheet" href="fonts.css" />
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+    <script defer src="../js/script02.js"></script>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"
+    ></script>
+
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="menu_bar ocultar_menu_responsive">
+        <a href="#" class="bt-menu"><span class="icon-menu"></span>Menú</a>
+      </div>
+
+      <nav>
+        <ul>
+          <li>
+            <a href="#" class="ocultar_menu_responsive"><span class="icon-home"></span>Inicio</a>
+          </li>
+
+          <li class="submenu">
+            <a href="#">
+              <span class="icon-book"></span>Carreras<span
+                class="caret icon-circle-down"
+              ></span
+            ></a>
+            <ul class="children">
+              <li>
+                <a href="#nosotros" class="ocultar_menu_responsive">Ingenierías <span class="icon-book"></span></a>
+              </li>
+              <li>
+                <a href="#nuestrascarreras" class="ocultar_menu_responsive">Tecnologías <span class="icon-book"></span></a>
+              </li>
+              <li>
+                <a href="#">Negocios <span class="icon-book"></span></a>
+              </li>
+              <li>
+                <a href="#">Comunicaciones <span class="icon-book"></span></a>
+              </li>
+              <li>
+                <a href="#"
+                  >Carreras gente que trabaja <span class="icon-book"></span
+                ></a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="submenu">
+            <a href="#"
+              ><span class="icon-books"></span>Cursos<span
+                class="caret icon-circle-down"
+              ></span
+            ></a>
+            <ul class="children">
+              <li>
+                <a href="#">Office <span class="icon-books"></span></a>
+              </li>
+              <li>
+                <a href="#">Tecnologías <span class="icon-books"></span></a>
+              </li>
+              <li>
+                <a href="#">Gestión <span class="icon-books"></span></a>
+              </li>
+              <li>
+                <a href="#">Diseño <span class="icon-books"></span></a>
+              </li>
+              <li>
+                <a href="#">Ingeniería <span class="icon-books"></span></a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="submenu">
+            <a href="#"
+              ><span class="icon-briefcase"></span>Diplomados<span
+                class="caret icon-circle-down"
+              ></span
+            ></a>
+            <ul class="children">
+              <li>
+                <a href="#">Marketing <span class="icon-briefcase"></span></a>
+              </li>
+              <li>
+                <a href="#">Gestión <span class="icon-briefcase"></span></a>
+              </li>
+              <li>
+                <a href="#">Logística <span class="icon-briefcase"></span></a>
+              </li>
+              <li>
+                <a href="#">Negocios <span class="icon-briefcase"></span></a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#nosotros" class="ocultar_menu_responsive"><span class="icon-bookmark"></span>Nosotros</a>
+          </li>
+          <li>
+            <a href="#nuestrascarreras" class="ocultar_menu_responsive"><span class="icon-bookmark"></span>Nuestras Carreras</a
+            >
+          </li>
+          <li>
+            <a href="#testimonios" class="ocultar_menu_responsive"><span class="icon-cart"></span>Testimonios</a
+            >
+          </li>
+          <li>
+            <a href="#contactenos" class="ocultar_menu_responsive"><span class="icon-cart"></span>Contáctenos</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Slider -->
+    <section id="container-slider">
+      <a href="javascript: fntExecuteSlide('prev');" class="arrowPrev"
+        ><i class="fas fa-chevron-circle-left"></i
+      ></a>
+      <a href="javascript: fntExecuteSlide('next');" class="arrowNext"
+        ><i class="fas fa-chevron-circle-right"></i
+      ></a>
+      <ul class="listslider">
+        <li><a itlist="itList_0" href="#" class="item-select-slid"></a></li>
+        <li><a itlist="itList_1" href="#"></a></li>
+        <li><a itlist="itList_2" href="#"></a></li>
+      </ul>
+      <ul id="slider">
+        <li
+          style="
+            background-image: url('https://cdn.pixabay.com/photo/2020/04/15/11/20/telework-5046230_1280.jpg');
+            z-index: 0;
+            opacity: 1;
+          "
+        >
+          <div class="content_slider">
+            <div>
+              <h2>Emprendimiento empresarial</h2>
+              <p>
+                Descubra en qué consiste el emprendimiento empresarial por medio
+                de 5 estrategias fundamentales.
+              </p>
+              <a href="#" class="btnSlider">Ver más</a>
+            </div>
+          </div>
+        </li>
+        <li
+          style="
+            background-image: url('https://cdn.pixabay.com/photo/2018/02/20/10/28/business-3167295_960_720.jpg');
+          "
+        >
+          <div class="content_slider">
+            <div>
+              <h2>Negocios</h2>
+              <p>
+                Recursos, guías, herramientas y consejos para emprender, crear
+                tu empresa o iniciar un negocio exitoso
+              </p>
+              <a href="#" class="btnSlider">Ver más</a>
+            </div>
+          </div>
+        </li>
+        <li
+          style="
+            background-image: url('https://cdn.pixabay.com/photo/2015/07/17/22/42/typing-849806_960_720.jpg');
+          "
+        >
+          <div class="content_slider">
+            <div>
+              <h2>Estrategias de negocio</h2>
+              <p>Las estrategias de negocio representan planes o métodos...</p>
+              <a href="#" class="btnSlider">Ver más</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="Nosotros" id="nosotros">
+      <h2>Nosotros</h2>
+
+      <div class="grilla01">
+        <a href="#">
+          <img
+            width="300"
+            height="169"
+            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/san-fransisco-768x432.jpg"
+            alt="san francisco"
+          />
+        </a>
+
+        <a href="#">
+          <img
+            width="300"
+            height="169"
+            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/london-768x432.jpg"
+            alt="london"
+          />
+        </a>
+
+        <a href="#">
+          <img
+            width="300"
+            height="169"
+            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/new-york-768x432.jpg"
+            alt="new york"
+          />
+        </a>
+        <a href="#">
+          <img
+            width="300"
+            height="169"
+            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/cape-town-768x432.jpg"
+            alt="cape town"
+          />
+        </a>
+        <a href="#">
+          <img
+            width="300"
+            height="169"
+            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/beijing-768x432.jpg"
+            alt="beijing"
+          />
+        </a>
+        <a href="#">
+          <img
+            width="300"
+            height="169"
+            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/paris-768x432.jpg"
+            alt="paris"
+          />
+        </a>
+      </div>
+
+      <section class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+      </section>
+    </section>
+
+    <section class="NuestrasCarreras" id="nuestrascarreras">
+      <h2>Nuestras Carreras</h2>
+    </section>
+
+    <section id="testimonios" class="Testimonios">
+      <h2>Testimonios de alumnos</h2>
+    </section>
+
+    <section id="contactenos" class="Contactenos">
+      <h2>Contáctenos</h2>
+    </section>
+
+    <!--2 paso creando el boton para subir -->
+    <button class="btn-scrolltop" id="btn_scrolltop">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="js/boton_subir.js"></script>
+    <!-------------------------------------------->
+  </body>
+</html>
